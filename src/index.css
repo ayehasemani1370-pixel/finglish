@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&family=Fredoka:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  --font-persian: "Vazirmatn", sans-serif;
+}
+
+body {
+  @apply bg-[#F8FAFC] text-slate-800 antialiased overflow-hidden;
+  font-variant-numeric: tabular-nums;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Custom shadow for a minimalist look */
+.clean-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
